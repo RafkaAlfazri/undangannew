@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undangan Pernikahan Betawi - Syahdan & Salwa</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Musik Latar -->
+    <div class="music-player">
+        <button id="music-toggle" class="music-btn">
+            <i class="fas fa-play"></i>
+        </button>
+        <audio id="background-music" loop>
+            <source src="SPONTAN.mp3" type="audio/mpeg">
+            Browser Anda tidak mendukung elemen audio.
+        </audio>
+    </div>
+
+    <!-- Halaman Pembuka -->
+    <section id="opening-page" class="opening-page">
+        <div class="background-pattern"></div>
+        
+        <!-- Ondel-ondel Animasi -->
+        <div class="ondel-ondel male">
+            <div class="ondel-body">
+                <div class="ondel-face">
+                    <div class="ondel-eyes">
+                        <div class="eye"></div>
+                        <div class="eye"></div>
+                    </div>
+                    <div class="ondel-mouth"></div>
+                </div>
+                <div class="ondel-hair"></div>
+            </div>
+            <div class="ondel-hands">
+                <div class="hand left"></div>
+                <div class="hand right"></div>
+            </div>
+        </div>
+        
+        <div class="ondel-ondel female">
+            <div class="ondel-body">
+                <div class="ondel-face">
+                    <div class="ondel-eyes">
+                        <div class="eye"></div>
+                        <div class="eye"></div>
+                    </div>
+                    <div class="ondel-mouth"></div>
+                </div>
+                <div class="ondel-hair"></div>
+            </div>
+            <div class="ondel-hands">
+                <div class="hand left"></div>
+                <div class="hand right"></div>
+            </div>
+        </div>
+
+        <!-- Konten Pembuka -->
+        <div class="opening-content">
+            <div class="greeting">
+                <h2 class="animate-text">Kepada Yth:</h2>
+                <h1 id="guest-name" class="guest-name">Tamu Undangan</h1>
+            </div>
+            
+            <div class="ornament-divider">
+                <div class="ornament-left"></div>
+                <div class="ornament-center">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <div class="ornament-right"></div>
+            </div>
+            
+            <p class="invitation-text">Kami mengundang Bapak/Ibu/Saudara/i untuk menghadiri acara pernikahan kami</p>
+            
+            <div class="couple-names">
+                <h2>Syahdan & Salwa</h2>
+            </div>
+            
+            <button id="open-invitation" class="open-btn">
+                <span>Buka Undangan</span>
+                <i class="fas fa-envelope-open"></i>
+            </button>
+        </div>
+        
+        <!-- Dekorasi Lampu Hias -->
+        <div class="lamp-decoration">
+            <div class="lamp"></div>
+            <div class="lamp"></div>
+            <div class="lamp"></div>
+        </div>
+    </section>
+
+    <!-- Halaman Utama -->
+    <main id="main-content" class="main-content hidden">
+        <!-- Header Navigasi -->
+        <nav class="nav-bar">
+            <div class="nav-logo">
+                <span class="logo-text">S & S</span>
+            </div>
+            <div class="nav-links">
+                <a href="#home" class="nav-link active">Beranda</a>
+                <a href="#couple" class="nav-link">Mempelai</a>
+                <a href="#event" class="nav-link">Acara</a>
+                <a href="#rsvp" class="nav-link">RSVP</a>
+                <a href="#gifts" class="nav-link">Amplop</a>
+                <a href="#wishes" class="nav-link">Ucapan</a>
+            </div>
+            <button class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+
+        <!-- Bagian Utama -->
+        <div class="sections-container">
+            <!-- Bagian 1: Ucapan Selamat Datang -->
+            <section id="home" class="section welcome-section">
+                <div class="section-header">
+                    <h2 class="section-title">Assalamu'alaikum Warahmatullahi Wabarakatuh</h2>
+                    <div class="section-divider"></div>
+                </div>
+                
+                <div class="welcome-content">
+                    <p class="welcome-text">
+                        Dengan penuh rasa syukur dan bahagia, kami mengundang Anda untuk bersama-sama 
+                        mendoakan dan menyaksikan pernikahan putra-putri kami:
+                    </p>
+                    
+                    <div class="couple-presentation">
+                        <div class="groom">
+                            <h3 class="name-title">Syahdan</h3>
+                            <p class="parent-name">Putra dari Bapak Ahmad & Ibu Siti</p>
+                        </div>
+                        
+                        <div class="couple-heart">
+                            <i class="fas fa-heart"></i>
+                            <div class="circle"></div>
+                        </div>
+                        
+                        <div class="bride">
+                            <h3 class="name-title">Salwa</h3>
+                            <p class="parent-name">Putri dari Bapak Budi & Ibu Rani</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Ayat Ar-Rum 21 -->
+                <div class="verse-container">
+                    <div class="verse-arabic">
+                        <p>وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُمْ مِنْ أَنْفُسِكُمْ أَزْوَاجًا لِتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُمْ مَوَدَّةً وَرَحْمَةً إِنَّ فِي ذَٰلِكَ لَآيَاتٍ لِقَوْمٍ يَتَفَكَّرُونَ</p>
+                    </div>
+                    <div class="verse-translation">
+                        <p>"Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu isteri-isteri dari jenismu sendiri, supaya kamu cenderung dan merasa tenteram kepadanya, dan dijadikan-Nya diantaramu rasa kasih dan sayang. Sesungguhnya pada yang demikian itu benar-benar terdapat tanda-tanda bagi kaum yang berfikir."</p>
+                        <p class="verse-source">(QS. Ar-Rum: 21)</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Bagian 2: Detail Mempelai -->
+            <section id="couple" class="section couple-section">
+                <div class="section-header">
+                    <h2 class="section-title">Profil Mempelai</h2>
+                    <div class="section-divider"></div>
+                </div>
+                
+                <div class="couple-details">
+                    <div class="couple-card groom-card">
+                        <div class="couple-img-frame">
+                            <div class="couple-img-placeholder">
+                                <i class="fas fa-user-tie"></i>
+                            </div>
+                        </div>
+                        <h3 class="couple-name">Syahdan</h3>
+                        <p class="couple-desc">
+                            Putra pertama dari Bapak Ahmad dan Ibu Siti. 
+                            Saat ini bekerja sebagai Arsitek di Jakarta.
+                        </p>
+                        <div class="couple-contact">
+                            <p><i class="fas fa-graduation-cap"></i> Universitas Indonesia</p>
+                            <p><i class="fas fa-briefcase"></i> PT. Desain Bangun Nusantara</p>
+                        </div>
+                    </div>
+                    
+                    <div class="couple-heart-large">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    
+                    <div class="couple-card bride-card">
+                        <div class="couple-img-frame">
+                            <div class="couple-img-placeholder">
+                                <i class="fas fa-user-circle"></i>
+                            </div>
+                        </div>
+                        <h3 class="couple-name">Salwa</h3>
+                        <p class="couple-desc">
+                            Putri kedua dari Bapak Budi dan Ibu Rani.
+                            Saat ini bekerja sebagai Dokter di RS. Cipto Mangunkusumo.
+                        </p>
+                        <div class="couple-contact">
+                            <p><i class="fas fa-graduation-cap"></i> Universitas Indonesia</p>
+                            <p><i class="fas fa-stethoscope"></i> RS. Cipto Mangunkusumo</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Countdown Timer -->
+                <div class="countdown-container">
+                    <h3 class="countdown-title">Menuju Hari Bahagia</h3>
+                    <div class="countdown-timer">
+                        <div class="countdown-item">
+                            <div class="countdown-number" id="days">00</div>
+                            <div class="countdown-label">Hari</div>
+                        </div>
+                        <div class="countdown-separator">:</div>
+                        <div class="countdown-item">
+                            <div class="countdown-number" id="hours">00</div>
+                            <div class="countdown-label">Jam</div>
+                        </div>
+                        <div class="countdown-separator">:</div>
+                        <div class="countdown-item">
+                            <div class="countdown-number" id="minutes">00</div>
+                            <div class="countdown-label">Menit</div>
+                        </div>
+                        <div class="countdown-separator">:</div>
+                        <div class="countdown-item">
+                            <div class="countdown-number" id="seconds">00</div>
+                            <div class="countdown-label">Detik</div>
+                        </div>
+                    </div>
+                    <p class="wedding-date">Sabtu, 15 Juni 2024</p>
+                </div>
+            </section>
+
+            <!-- Bagian 3: Detail Acara -->
+            <section id="event" class="section event-section">
+                <div class="section-header">
+                    <h2 class="section-title">Detail Acara</h2>
+                    <div class="section-divider"></div>
+                </div>
+                
+                <div class="event-details">
+                    <div class="event-card">
+                        <div class="event-icon">
+                            <i class="fas fa-mosque"></i>
+                        </div>
+                        <h3 class="event-title">Akad Nikah</h3>
+                        <div class="event-time">
+                            <i class="far fa-clock"></i>
+                            <span>08:00 - 10:00 WIB</span>
+                        </div>
+                        <div class="event-date">
+                            <i class="far fa-calendar"></i>
+                            <span>Sabtu, 15 Juni 2024</span>
+                        </div>
+                        <div class="event-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Masjid Al-Mubarak, Jl. Kebon Sirih No. 12, Jakarta Pusat</span>
+                        </div>
+                        <button class="map-btn" data-location="Masjid Al-Mubarak, Jakarta Pusat">
+                            <i class="fas fa-map"></i> Lihat Peta
+                        </button>
+                    </div>
+                    
+                    <div class="event-card">
+                        <div class="event-icon">
+                            <i class="fas fa-glass-cheers"></i>
+                        </div>
+                        <h3 class="event-title">Resepsi</h3>
+                        <div class="event-time">
+                            <i class="far fa-clock"></i>
+                            <span>11:00 - 14:00 WIB</span>
+                        </div>
+                        <div class="event-date">
+                            <i class="far fa-calendar"></i>
+                            <span>Sabtu, 15 Juni 2024</span>
+                        </div>
+                        <div class="event-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Ballroom Hotel Sultan, Jl. Thamrin No. 1, Jakarta Pusat</span>
+                        </div>
+                        <button class="map-btn" data-location="Hotel Sultan, Thamrin Jakarta">
+                            <i class="fas fa-map"></i> Lihat Peta
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Peta -->
+                <div class="map-container">
+                    <div class="map-placeholder">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <p>Lokasi dapat dilihat di Google Maps</p>
+                        <small>Klik tombol "Lihat Peta" di atas untuk melihat lokasi</small>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Bagian 4: RSVP -->
+            <section id="rsvp" class="section rsvp-section">
+                <div class="section-header">
+                    <h2 class="section-title">Konfirmasi Kehadiran</h2>
+                    <div class="section-divider"></div>
+                    <p class="section-subtitle">Mohon konfirmasi kehadiran Anda sebelum tanggal 10 Juni 2024</p>
+                </div>
+                
+                <div class="rsvp-container">
+                    <form id="rsvp-form" class="rsvp-form">
+                        <div class="form-group">
+                            <label for="rsvp-name"><i class="fas fa-user"></i> Nama Lengkap</label>
+                            <input type="text" id="rsvp-name" required placeholder="Masukkan nama lengkap Anda">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label><i class="fas fa-users"></i> Jumlah Tamu</label>
+                            <div class="guest-count">
+                                <button type="button" class="count-btn" id="decrease-guest">-</button>
+                                <input type="number" id="guest-count" value="1" min="1" max="10" readonly>
+                                <button type="button" class="count-btn" id="increase-guest">+</button>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label><i class="fas fa-calendar-check"></i> Konfirmasi Kehadiran</label>
+                            <div class="attendance-options">
+                                <label class="option-label">
+                                    <input type="radio" name="attendance" value="Hadir" checked>
+                                    <span class="option-box">
+                                        <i class="fas fa-check-circle"></i>
+                                        <span>Hadir</span>
+                                    </span>
+                                </label>
+                                <label class="option-label">
+                                    <input type="radio" name="attendance" value="Tidak Hadir">
+                                    <span class="option-box">
+                                        <i class="fas fa-times-circle"></i>
+                                        <span>Tidak Hadir</span>
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="rsvp-message"><i class="fas fa-comment"></i> Ucapan / Doa (Opsional)</label>
+                            <textarea id="rsvp-message" rows="3" placeholder="Tulis ucapan atau doa untuk mempelai"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-paper-plane"></i> Kirim Konfirmasi
+                        </button>
+                    </form>
+                    
+                    <div class="rsvp-info">
+                        <div class="info-box">
+                            <i class="fas fa-info-circle"></i>
+                            <p>Konfirmasi kehadiran hanya disimpan di perangkat Anda (LocalStorage) dan tidak dikirim ke server manapun.</p>
+                        </div>
+                        
+                        <div class="rsvp-list-container">
+                            <h4><i class="fas fa-list"></i> Daftar Konfirmasi</h4>
+                            <div id="rsvp-list" class="rsvp-list">
+                                <!-- Daftar RSVP akan muncul di sini -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Bagian 5: Amplop Digital -->
+            <section id="gifts" class="section gift-section">
+                <div class="section-header">
+                    <h2 class="section-title">Amplop Digital</h2>
+                    <div class="section-divider"></div>
+                    <p class="section-subtitle">Bagi yang ingin memberikan tanda kasih untuk mempelai</p>
+                </div>
+                
+                <div class="gift-container">
+                    <div class="bank-card">
+                        <div class="bank-header">
+                            <i class="fas fa-university"></i>
+                            <h3>Transfer Bank</h3>
+                        </div>
+                        
+                        <div class="bank-details">
+                            <div class="bank-item">
+                                <span class="bank-label">Nama Bank</span>
+                                <span class="bank-value">Bank Central Asia (BCA)</span>
+                            </div>
+                            <div class="bank-item">
+                                <span class="bank-label">Nomor Rekening</span>
+                                <span class="bank-value">123 456 7890</span>
+                            </div>
+                            <div class="bank-item">
+                                <span class="bank-label">Atas Nama</span>
+                                <span class="bank-value">Syahdan</span>
+                            </div>
+                        </div>
+                        
+                        <button id="copy-bank" class="copy-btn">
+                            <i class="fas fa-copy"></i> Salin Nomor Rekening
+                        </button>
+                    </div>
+                    
+                    <div class="bank-card">
+                        <div class="bank-header">
+                            <i class="fas fa-university"></i>
+                            <h3>Transfer Bank</h3>
+                        </div>
+                        
+                        <div class="bank-details">
+                            <div class="bank-item">
+                                <span class="bank-label">Nama Bank</span>
+                                <span class="bank-value">Bank Mandiri</span>
+                            </div>
+                            <div class="bank-item">
+                                <span class="bank-label">Nomor Rekening</span>
+                                <span class="bank-value">098 765 4321</span>
+                            </div>
+                            <div class="bank-item">
+                                <span class="bank-label">Atas Nama</span>
+                                <span class="bank-value">Salwa</span>
+                            </div>
+                        </div>
+                        
+                        <button id="copy-bank2" class="copy-btn">
+                            <i class="fas fa-copy"></i> Salin Nomor Rekening
+                        </button>
+                    </div>
+                    
+                    <div class="gift-note">
+                        <i class="fas fa-hands-helping"></i>
+                        <p>Terima kasih atas doa dan restu serta tanda kasih yang diberikan. Semoga menjadi berkah dan kebaikan untuk kita semua.</p>
+                    </div>
+                </div>
+                
+                <div class="copy-notification" id="copy-notification">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Nomor rekening berhasil disalin!</span>
+                </div>
+            </section>
+
+            <!-- Bagian 6: Ucapan Selamat -->
+            <section id="wishes" class="section wishes-section">
+                <div class="section-header">
+                    <h2 class="section-title">Ucapan & Doa</h2>
+                    <div class="section-divider"></div>
+                    <p class="section-subtitle">Berikan ucapan dan doa untuk mempelai</p>
+                </div>
+                
+                <div class="wishes-container">
+                    <form id="wish-form" class="wish-form">
+                        <div class="form-group">
+                            <label for="wish-name"><i class="fas fa-user"></i> Nama Anda</label>
+                            <input type="text" id="wish-name" required placeholder="Masukkan nama Anda">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="wish-message"><i class="fas fa-comment-dots"></i> Ucapan & Doa</label>
+                            <textarea id="wish-message" rows="4" required placeholder="Tulis ucapan dan doa untuk mempelai"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-paper-plane"></i> Kirim Ucapan
+                        </button>
+                    </form>
+                    
+                    <div class="wishes-list-container">
+                        <h4><i class="fas fa-comments"></i> Ucapan Tamu</h4>
+                        <div id="wishes-list" class="wishes-list">
+                            <!-- Daftar ucapan akan muncul di sini -->
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="wish-notification" id="wish-notification">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Ucapan berhasil dikirim!</span>
+                </div>
+            </section>
+            
+            <!-- Footer -->
+            <footer class="footer">
+                <div class="footer-content">
+                    <div class="footer-logo">
+                        <span class="logo-text">S & S</span>
+                        <p>Pernikahan Syahdan & Salwa</p>
+                    </div>
+                    
+                    <div class="footer-info">
+                        <p><i class="fas fa-calendar-alt"></i> Sabtu, 15 Juni 2024</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Jakarta, Indonesia</p>
+                    </div>
+                    
+                    <div class="footer-note">
+                        <p>Terima kasih atas doa dan kehadiran Bapak/Ibu/Saudara/i. Semoga Allah SWT membalas segala kebaikan Anda.</p>
+                    </div>
+                    
+                    <div class="footer-links">
+                        <a href="admin.html" class="admin-link">
+                            <i class="fas fa-user-cog"></i> Admin Tamu
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-bottom">
+                    <p>&copy; 2024 Undangan Pernikahan Digital - Konsep Betawi Modern</p>
+                </div>
+            </footer>
+        </div>
+    </main>
+
+    <!-- Modal Peta -->
+    <div id="map-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modal-location">Lokasi Acara</h3>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="map-placeholder-modal">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <p>Untuk detail lokasi, silakan buka Google Maps atau aplikasi peta lainnya</p>
+                    <p id="location-details" class="location-details"></p>
+                    <small>Browser tidak mendukung embedding Google Maps tanpa API key berbayar</small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
